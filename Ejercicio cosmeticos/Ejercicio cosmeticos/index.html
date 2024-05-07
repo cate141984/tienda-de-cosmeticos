@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo/logo.png" type="logo/png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>G4-Cosmeticos</title>
+</head>
+
+<body>
+
+    <header id="hnavbar">
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg bg-body">
+            <div class="container-fluid">
+               <button
+                  data-mdb-collapse-init
+                  class="navbar-toggler"
+                  type="button"
+                  data-mdb-target="#navbarExample01"
+                  aria-controls="navbarExample01"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation">
+               <i class="fas fa-bars"></i>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarExample01">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                     <!-- Aquí le damos el diseño a los botones del navbar -->
+                     <li class="nav-item active">                  
+                        <a class="nav-link" aria-current="page" href="#Inicio"  >
+                        <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4" style="background-color:  #fdcae1;" id="Inicio">Inicio</button></a>
+                     </li>
+                     <!-- Aquí le damos el diseño a los botones del navbar -->
+                     <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#Contacto" >
+                        <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4" style="background-color:  #fdcae1;">Contacto</button></a>
+                        <!-- Aquí le damos el diseño a los botones del navbar -->
+                     <li class="nav-item active">
+                        <a class="nav-link" aria-current="page" href="#Ofertas" >
+                        <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4" style="background-color:  #fdcae1;">Ofertas</button></a>
+                     </li>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#Productos">
+                        <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4" style="background-color:  #fdcae1;">Productos</button></a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">
+                        <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4" style="background-color:  #fdcae1;">Nosotros</button></a>
+                     </li>
+                  </ul>
+                  <!-- Aquí le damos el diseño a al boton para iniciar sesion-->
+                  <a class="nav-link" href="login.html">
+                  <button data-mdb-ripple-init type="submit" href="login.html" class="btn btn-primary btn-block mb-4" style="background-color:  #fdcae1;" id="btnInicioSesion">Iniciar Sesion</button>
+                  </a>
+                  <a class="nav-link" href="#">
+                  <button data-mdb-ripple-init type="submit" href="index.html" class="btn btn-primary btn-block mb-4" style="background-color:  #fdcae1; display: none;" id="logout">Cerrar Sesion</button>
+                  </a>
+                  <a class="nav-link" href="#">
+                  <button data-mdb-ripple-init type="submit" href="index.html" class="btn btn-primary btn-block mb-4" style="background-color:  #fdcae1; display: none;" id="carShopping"><span><i class="fas fa-cart-shopping"></i></span>
+                    <span class="badge rounded-pill badge-notification bg-danger " id="contadorProductos"></span></button>
+                  
+                  </a>
+                  
+               </div>
+            </div>
+         </nav>
+         <!-- Navbar -->
+    </header>
+
+    <section>
+        <div class="row">
+            <div
+                 class="p-5 text-center bg-image"
+                 style="background-image: url('Imagenes/encabezado.png'); height: 300px;">
+                <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+                    <div class="d-flex justify-content-center align-items-center h-100">
+                        <div class="text-white">
+                            <h1 class="mb-3">G4-Cosmeticos</h1>
+                            <a data-mdb-ripple-init class="btn btn-outline-light btn-lg" href="#!" role="button">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" id="Productos">
+            <div class="row">
+               <div class="col">
+                  <div class="card" style="width: 20rem;">
+                     <img src="Imagenes/sombras3.png"  class="card-img-top1" alt="Sunset Over the Sea"/>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card" style="width: 18rem;">
+                     <img src="Imagenes/Brochas y accesorios.png" class="card-img-top4" height="212px" width="320px" alt="Sunset Over the Sea"/>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="card" style="width: 18rem;">
+                     <img src="Imagenes/labios.png" class="card-img-top3"height="212px" width="320px" alt="Sunset Over the Sea"/>
+                  </div>
+               </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h1 class="titulo">Looks de maquillaje</h1>
+                    <p class="parrafo">Logra un maquillaje paso a paso de larga duración</p>
+                    <img src="Imagenes/base maqui.jpg" class="img-fluid" alt="Wild Landscape" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <button type="button" class="btn-btn" style="background-color:black;" data-mdb-ripple-init >Rutina de rostro</button>
+                </div>    
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h1 class="titulo-3" style="text-align: center; padding-top: 50px; padding-left: 150px;" id="Ofertas">Ofertas</h1>
+                    <div class="multi-carousel"   >
+                        <div class="d-flex justify-content-center m-2 mb-3">
+                            <button class="carousel-control-prev btn btn-pink btn-floating mx-3" type="button" tabindex="0" data-mdb-slide="prev">
+                            <i class="fas fa-angle-left fa-lg"></i>
+                            </button>
+                            <button class="carousel-control-next btn btn-pink btn-floating mx-3" type="button" tabindex="0" data-mdb-slide="next">
+                            <i class="fas fa-angle-right fa-lg"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="multi-carousel-inner">
+                        <div class="multi-carousel-item">
+                            <div class="card m-2"style="margin-left:150px">
+                               <img class="card-img-top" style="width: 200px; height: 200px; border-radius: 0px;" src="Imagenes/base.svg" alt="Card image cap" />
+                               <div class="card-body">
+                                  <h5 class="card-title" style="text-align: center;">Base de larga duración</h5>
+                                  <p class="card-text" style="text-align: center;">25.000</p>
+                                  <button type="button"style="border-radius:5px" class="btncompra btn btn-dark btn-rounded" data-producto="Base de larga duración 1" data-valor="25000" data-mdb-ripple-init>comprar</button>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="multi-carousel-item">
+                            <div class="card m-2"style="margin-left:150px">
+                               <img class="card-img-top" style="width: 200px; height: 200px; border-radius: 0px;" src="Imagenes/base.svg" alt="Card image cap" />
+                               <div class="card-body">
+                                  <h5 class="card-title" style="text-align: center;">Base de larga duración</h5>
+                                  <p class="card-text" style="text-align: center;">25.000</p>
+                                  <button type="button"style="border-radius:5px" class="btncompra btn btn-dark btn-rounded" data-producto="Base de larga duración 1" data-valor="25000" data-mdb-ripple-init>comprar</button>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="multi-carousel-item">
+                            <div class="card m-2">
+                               <img class="card-img-top" src="Imagenes/sombras.svg" style="width: 200px; height: 220px;" alt="Card image cap" />
+                               <div class="card-body" >
+                                  <h5 class="card-title" style="text-align: center;">Polvos compactos</h5>
+                                  <p class="price mb-0" style="text-align: center;">30.000</p>
+                                  <button type="button"style="border-radius:5px" class="btncompra btn btn-dark btn-rounded" data-producto="Polvos compactos" data-valor="25000" data-mdb-ripple-init>comprar</button>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="multi-carousel-item">
+                            <div class="card m-2"style="margin-left:150px">
+                               <img class="card-img-top" style="width: 200px; height: 200px; border-radius: 0px;" src="Imagenes/base.svg" alt="Card image cap" />
+                               <div class="card-body">
+                                  <h5 class="card-title" style="text-align: center;">Base de larga duración</h5>
+                                  <p class="card-text" style="text-align: center;">25.000</p>
+                                  <button type="button"style="border-radius:5px" class="btncompra btn btn-dark btn-rounded" data-producto="Base de larga duración 1" data-valor="25000" data-mdb-ripple-init>comprar</button>
+                               </div>
+                            </div>
+                        </div>
+                        <div class="multi-carousel-item">
+                            <div class="card m-2">
+                               <img class="card-img-top" src="Imagenes/sombras.svg" style="width: 200px; height: 220px;" alt="Card image cap" />
+                               <div class="card-body" >
+                                  <h5 class="card-title" style="text-align: center;">Polvos compactos</h5>
+                                  <p class="price mb-0" style="text-align: center;">30.000</p>
+                                  <button type="button"style="border-radius:5px" class="btncompra btn btn-dark btn-rounded" data-producto="Polvos compactos 2"  data-valor="25000" data-mdb-ripple-init>comprar</button>
+                               </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+
+            
+
+        
+
+            <div class="row">
+                <div class="w-100 p-4 pb-4 d-flex justify-content-center contrasting-bg " style="background-image: url('Imagenes/cosmeticos.jpg');" >
+                
+                    <form style="width: 26rem;" action="https://formspree.io/f/xzbnkkdl" method="POST" id="loginForm">
+                        <!-- Name input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="text" name="Nombre" id="form4Example1" class="form-control" />
+                        <label class="form-label" for="form4Example1">Nombre completo</label>
+                        </div>
+                        <!-- Name input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="tel" name="Celular" id="form4Example4" class="form-control" />
+                        <label class="form-label" for="form4Example4">Celular</label>
+                        </div>
+                        <!-- Email input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                        <input type="email" name="Correo" id="form4Example2" class="form-control" />
+                        <label class="form-label" for="form4Example2">Correo electrónico</label>
+                        </div>
+                        <!-- Message input -->
+                        <div data-mdb-input-init class="form-outline mb-4">
+                        <textarea class="form-control" name="Mensaje" id="form4Example3" rows="4"></textarea>
+                        <label class="form-label"  for="form4Example3">Mensaje</label>
+                        </div>
+                        <!-- Checkbox -->
+                        <div class="form-check d-flex justify-content-center mb-4" >
+                        <input
+                            class="form-check-input me-2"
+                            type="checkbox"
+                            value=""
+                            id="form4Example5"
+                            checked
+                            />
+                        <label class="form-check-label" for="form4Example5">
+                        Enviame una copia de este mensaje
+                        </label>
+                        </div>
+                        <!-- Submit button -->
+                        <button data-mdb-ripple-init type="submit" class="btn btn-primary btn-block mb-4" style="background-color:  #fdcae1;">Enviar</button>
+                    </form>
+                </div>
+            </div>        
+        </div>    
+        
+
+    </section>
+
+    <footer class="bg-body-tertiary text-center" style="width: 100%;"  >
+
+        <div class="container p-4 pb-0">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+               <!-- Facebook -->
+               <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #3b5998;"
+                  href="https://www.facebook.com/Yanbal.CO/?locale=es_LA"
+                  role="button"
+                  ><i class="fab fa-facebook-f"></i
+                  ></a>
+               <!-- Google -->
+               <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #dd4b39;"
+                  href="https://www.holycosmetics.com.co/"
+                  role="button"
+                  ><i class="fab fa-google"></i
+                  ></a>
+               <!-- Instagram -->
+               <a
+                  data-mdb-ripple-init
+                  class="btn text-white btn-floating m-1"
+                  style="background-color: #fdcae1;"
+                  href="https://www.instagram.com/voguecosmeticos/?hl=es"
+                  role="button"
+                  ><i class="fab fa-instagram"></i
+                  ></a>
+            </section>
+            <!-- Section: Social media -->
+         </div>
+
+    </footer>
+    <script src="js/index.js"></script>
+</body>
+</html>
